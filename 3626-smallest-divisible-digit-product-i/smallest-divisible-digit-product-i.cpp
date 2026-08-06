@@ -3,7 +3,7 @@ public:
     int smallestNumber(int n, int t) {
         int temp;
         int mul = 1;
-        int num=0;
+        int num = 0;
         int multiply;
 
         do {
