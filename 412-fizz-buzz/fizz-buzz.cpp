@@ -1,4 +1,4 @@
-#include <bits/stdc++.h>
+
 
 class Solution {
 public:
@@ -30,15 +30,3 @@ public:
     }
 };
 
-// if(i%3==0){
-//             v1.push_back("Fizz");
-
-//         }
-
-//         else if(i%5==0){
-//             v1.push_back("Buzz");
-//         }
-
-//         else if(i%3==0 && i%5==0){
-//             v1.push_back("FizzBuzz");
-//         }
