@@ -13,6 +13,7 @@ public:
             if(freq[nums[i]]==1){
 
                 element = nums[i];
+                break;
 
             }
         }
