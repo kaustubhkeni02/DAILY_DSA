@@ -2,39 +2,51 @@ class Solution {
 public:
     int singleNumber(vector<int>& nums) {
 
-        unordered_map<int,int> freq;
-        int element;
+        int ans = 0;
 
-        for(auto it : nums){
-            freq[it]++;
+        for (auto it : nums) {
+            ans = ans ^ it;
         }
 
-        for(int i = 0 ; i < nums.size() ; i++){
-            if(freq[nums[i]]==1){
-
-                element = nums[i];
-                break;
-
-            }
-        }
-
-        return element;
-
-        
+        return ans;
     }
 };
 
-        // int count = 0 ;
-        // for(int i = 0 ; i < nums.size() ; i++){
-        //     for(int j = i+1 ; j< nums.size() ; j++){
-        //         if((nums[i]^nums[j])==0){
-        //             continue;
-        //         }
+// int ans = 0;
 
-        //         else{
-        //             count = nums[i];
-        //         }
-        //     }
-        // }
+// for(auto it : nums){
+//     ans=ans^it;
+// }
 
-        // return count;
+//     unordered_map<int,int> freq;
+//     int element;
+
+//     for(auto it : nums){
+//         freq[it]++;
+//     }
+
+//     for(int i = 0 ; i < nums.size() ; i++){
+//         if(freq[nums[i]]==1){
+
+//             element = nums[i];
+//             break;
+
+//         }
+//     }
+
+//     return element;
+
+// int count = 0 ;
+// for(int i = 0 ; i < nums.size() ; i++){
+//     for(int j = i+1 ; j< nums.size() ; j++){
+//         if((nums[i]^nums[j])==0){
+//             continue;
+//         }
+
+//         else{
+//             count = nums[i];
+//         }
+//     }
+// }
+
+// return count;
