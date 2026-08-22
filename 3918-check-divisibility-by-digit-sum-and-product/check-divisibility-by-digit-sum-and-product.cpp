@@ -15,12 +15,8 @@ public:
 
         int total_sum = sum + prod;
 
-        if (n % total_sum == 0) {
-            return true;
-        }
+        if (n % total_sum == 0) return true;
 
-        else {
-            return false;
-        }
+        else return false;
     }
 };
