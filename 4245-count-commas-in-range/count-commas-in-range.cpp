@@ -3,7 +3,6 @@ public:
     int countCommas(int n) {
         int num = n;
         int count = 0;
-        int mul = 1;
         while(num!=0){
             int temp = num % 10;
             count++;
