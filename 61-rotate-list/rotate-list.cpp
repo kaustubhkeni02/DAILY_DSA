@@ -15,7 +15,7 @@ public:
         if(head == nullptr || head->next == nullptr){
             return head;
         }
-        
+
         int len = 0;
         ListNode* mover = head;
         while(mover != nullptr){
@@ -23,6 +23,8 @@ public:
             mover = mover->next;
         }
 
+        if(k%len == 0) return head;
+        
         for (int i = 0; i < k%len ; i++) {
             ListNode* x = head;
             ListNode* prev = head;
